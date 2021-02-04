@@ -1,5 +1,7 @@
 #include <stdio.h>
-/*script that uses puts to print function*/
+/**
+*main - general function that contains the entire code 
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
