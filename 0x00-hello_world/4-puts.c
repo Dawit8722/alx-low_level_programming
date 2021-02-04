@@ -1,5 +1,5 @@
-/*Script that uses the puts function to print out strings*/
 #include <stdio.h>
+/*script that uses puts to print function*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
