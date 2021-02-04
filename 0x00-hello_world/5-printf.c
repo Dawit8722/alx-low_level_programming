@@ -1,8 +1,9 @@
 #include <stdio.h>
+
 /**
- * main - entry point
+ * main - main fuction that contains all files
  *
- * Return : 0 SUCCESS character
+ * Return: 0 SUCCESS character
  */
 int main(void)
 {
