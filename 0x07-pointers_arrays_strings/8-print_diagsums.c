@@ -1,30 +1,30 @@
 #include "holberton.h"
-#include <stdlib.h>
 #include <stdio.h>
+
 /**
-* print_diagsums - function for print a chessboard
-* @a: pointer to chess
-* @size: tamaño square
-* Return: void
-*/
+ *print_diagsums - prints the sum of the two diagonals
+ *                      of a square matrix of integers
+ *@a: the matrix of integers
+ *@size: the size of the matrix
+ *Return: nothing
+ */
 void print_diagsums(int *a, int size)
 {
-	int i, suma1 = 0, suma2 = 0, m;
 
-	m = size * size;
-	for (i = 0; i < m; i++)
+	int index, sum1 = 0, sum2 = 0;
+
+	for (index = 0; index < size; index++)
 	{
-		if (i % (size + 1) == 0)
-		{
-			suma1 += a[i];
-		}
+		sum1 += a[index];
+		a += size;
 	}
-	for (i = m - size ; i > 0; i--)
+
+	a -= size;
+
+	for (index = 0; index < size; index++)
 	{
-		if (i % (size - 1) == 0)
-		{
-			suma2 += a[i];
-		}
+		sum2 += a[index];
+		a -= size;
 	}
-	printf("%d, %d\n", suma1, suma2);
+	printf("%d,%d\n", sum1, sum2);
 }
